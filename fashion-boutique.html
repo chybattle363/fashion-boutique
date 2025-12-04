@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>🎀Luxe Line Boutique - Curated Looks for Every Mood</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+        <link rel="stylesheet" href="fashion-boutique.css">    
+    </head>
+    <body>
+        <!-----------HEADER-->
+        <header class="site-header">
+            <div class="header-inner">
+                <div class="logo-block">
+                    <h1 class="logo-text">🎀Luxe Line Boutique</h1>
+                    <p class="tagline">Curated looks for busy, fashion-forward women.</p>
+                </div>
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li><a href="#new-in" class="nav-link active">New-In</a></li>
+                        <li><a href="#best-sellers" class="nav-link">Best Sellers</a></li>
+                        <li><a href="#style-quiz" class="nav-link">Style Quiz</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                    <button class="wishlist-indicator" type="button">Shop Now
+                        <span id="wishlist-count">0</span>
+                    </button>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <!----------HERO-->
+            <section id="hero" class="hero">
+                <div class="hero-inner">
+                    <div class="hero-copy">
+                        <h2 class="hero-title">Effortless Outfits for Every Day of Your Week</h2>
+                        <p class="hero-text">
+                            Build a capsule wardrobe that actually fits your real life. 
+                            From brunch to the boardroom, we've got your next facorite look.
+                        </p>
+
+                        <div class="hero-actions">
+                            <button id="shop-now-btn" class="btn btn-primary" type="button">
+                                Shop New Arrivals
+                            </button>
+                            <a href="#style-quiz" class="hero-secondary-link">
+                                Take the Style Quiz
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="hero-image-wrapper">
+                        <img
+                        src="blazer.png" 
+                        alt="Mannequin wearing a neutral blazer with satin midi skirt"
+                        class="hero-image"
+                        />
+                    </div>
+                </div>
+            </section>
+
+            <!---NEW IN/FILTERS-->
+            <section id="new-in" class="section new-in">
+                <div class="section-header">
+                    <h2>New In</h2>
+                    <p>Fresh drops for this week's outfits, hand-picked for real life.</p>
+                </div>
+
+                <!---FILTER BAR-->
+                <form class="filter-bar" id="product-fillers">
+                    <div class="filter-group">
+                        <label for="filter-category">Category</label>
+                        <select id="filter-category" name="category">
+                            <option value="all">All</option>
+                            <option value="dress">Dresses</option>
+                            <option value="top">Tops</option>
+                            <option value="bottom">Bottoms</option>
+                            <option value="accessory">Accessories</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="filter-price">Price</label>
+                        <select id="filter-price" name="price">
+                            <option value="all">All</option>
+                            <option value="low">Under $50</option>
+                            <option value="mid">$50-$100</option>
+                            <option value="high">Over $100</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="filter-occasion">Occasion</label>
+                        <select id="filter-occasion" name="occasion">
+                            <option value="all">All</option>
+                            <option value="work">Work</option>
+                            <option value="casual">Casual</option>
+                            <option value="nightout">Night Out</option>
+                        </select>
+                    </div>
+                </form>
+
+                <!---PRODUCT GRID-->
+                <div class="product-grid" id="product-grid">
+                    <!---Product 1-->
+                    <article
+                     class="product-card"
+                     data-category="dress"
+                     data-price="mid"
+                     data-occasion="nighout"
+                     >
+                    
+                    <img
+                    src="satindress.png"
+                    alt="Emerald satin slip dress on hanger"
+                    class="product-image"
+                    />
+                    <div class="product-body">
+                        <h3 class="product-name">Emerald City Slip Dress</h3>
+                        <p class="product-description">
+                            A bias-cut satin dress that hugs in all the right places and glows under soft lighting.
+                        </p>
+                        <p class="product-price">$89</p>
+                        <ul class="product-tags">
+                            <li class="tag">Satin</li>
+                            <li class="tag">Night Out</li>
+                            <li class="tag">Statement</li>
+                        </ul>
+                        <button 
+                        class="btn btn-secondary wishlist-btn"
+                        type="button"
+                        >
+                        ♡Add to wishlist
+                        </button>
+                    </div>
+                    </article>
+
+                    <!---Product 2-->
+                    <article
+                    class="product-card"
+                    data-category="top"
+                    data-price="low"
+                    data-occasion="casual"
+                    >
+                        <img
+                        src="ribbed shirt.jpg"
+                        alt="Soft ribbed long sleeve top folded neatly"
+                        class="product-image"
+                        />
+                        <div class="product-body">
+                            <h3 class="product-name">Cloud Ribbed Long Sleeve</h3>
+                            <p class="product-description">
+                                Your off-duty essential: soft rib knit, subtle scoop neck, and all-day comfort.
+                            </p>
+                            <p class="product-price">$39</p>
+                            <ul class="product-tags">
+                                <li class="tag">Soft Touch</li>
+                                <li class="tag">Casual</li>
+                                <li class="tag">Layering</li>
+                            </ul>
+                            <button 
+                            class="btn btn-secondary wishlist-btn"
+                            type="button"
+                            >
+                            ♡Add to wishlist
+                        </button>
+                        </div>
+                    </article>
+
+                    <!--Product 3-->
+                    <article
+                    class="product-card"
+                    data-category="bottom"
+                    data-price="mid"
+                    data-occasion="work"
+                    >
+
+                    <img
+                    src="hightrousers.png"
+                    alt="High waist tailored trousers on hanger"
+                    class="product-image"
+                    />
+                    <div class="product-body">
+                        <h3 class="product-name">Power Hour Trousers</h3>
+                        <p class="product-description">
+                            High-waist, ankle-grazing trousers with a sharp crease and stretch for comfort.
+                        </p>
+                        <p class="product-price">$79</p>
+                        <ul class="product-tags">
+                            <li class="tag">Workwear</li>
+                            <li class="tag">Tall Friendly</li>
+                            <li class="tag">Stretch</li>
+                        </ul>
+                        <button
+                        class="btn btn-secondary wishlist-btn"
+                        type="button"
+                        >
+                        ♡Add to wishlist
+                        </button>
+                    </div>
+                    </article>
+
+                    <!---Product 4-->
+                    <article
+                    class="product-card"
+                    data-category="dress"
+                    data-price="high"
+                    data-occasion="work"
+                    >
+
+                    <img 
+                    src="blazerdress.png"
+                    alt="Structured blazer dress in black"
+                    class="product-image"
+                    />
+                    <div class="product-body">
+                        <h3 class="product-name">Boardroom Blazer Dress</h3>
+                        <p class="product-description">
+                         A tailored blazer dress with strong shoulders and a cinched waist for instant polish.   
+                        </p>
+                        <p class="product-price">$129</p>
+                        <ul class="product-tags">
+                            <li class="tag">Power Look</li>
+                            <li class="tag">Work</li>
+                            <li class="tag">Lined</li>
+                        </ul>
+                        <button
+                        class="btn btn-secondary wishlist-btn"
+                        type="button"
+                        >
+                        ♡Add to wishlist
+                        </button>
+                    </div>
+                    </article>
+
+                    <!--Product 5-->
+                    <article
+                    class="product-card"
+                    data-category="top"
+                    data-price="mid"
+                    data-occasion="nighout"
+                    >
+
+                    <img
+                    src="sequincami.png"
+                    alt="Sequin camisole top on hanger"
+                    class="product-image"
+                    />
+                    <div class="product-body">
+                        <h3 class="product-name">Moonlight Sequin Cami</h3>
+                        <p class="product-description">
+                            A shimmer-heavy cami that dresses up jeans or layers under blazers for instant glam.
+                        </p>
+                        <p class="product-price">$59</p>
+                        <ul class="product-tags">
+                            <li class="tag">Sequins</li>
+                            <li class="tag">Night Out</li>
+                            <li class="tag">Petite Friendly</li>
+                        </ul>
+                        <button
+                        class="btn btn-secondary wishlist-btn"
+                        type="button"
+                        >
+                        ♡Add to wishlist
+                        </button>
+                    </div>
+                    </article>
+
+                    <!--Product 6-->
+                    <article
+                    class="product-card"
+                    data-category="accessory"
+                    data-price="low"
+                    data-occasion="work"
+                    >
+
+                    <img
+                    src="carryalltote.png"
+                    alt="Structured tote bag in tan leather"
+                    class="product-image"
+                    />
+                    <div class="product-body">
+                        <h3 class="product-name">Everyday Commute Tote</h3>
+                        <p class="product-description">
+                            A structured carry-all that holds your laptop, planner, and a backup pair of flats.
+                        </p>
+                        <p class="product-price">$45</p>
+                        <ul class="product-tags">
+                            <li class="tag">Vegan Leather</li>
+                            <li class="tag">Work</li>
+                            <li class="tag">Laptop Safe</li>
+                        </ul>
+                        <button
+                        class="btn btn-secondary wishlist-btn"
+                        type="button"
+                        >
+                        ♡Add to wishlist
+                        </button>
+                    </div>
+                    </article>
+                </div>
+            </section>
+
+            <!--BEST SELLERS-->
+            <section id="best-sellers" class="section best-sellers">
+                <div class="section-header">
+                    <h2>Best Sellers</h2>
+                    <p>The pieces customers keeps adding back to cart.</p>
+
+                    <!--NEW BUTTON-->
+                    <button id="best-sellers-btn" class="btn btn-secondary" type="button">
+                        Shop Best Sellers
+                    </button>
+                </div>
+
+                <div class="best-seller-layout">
+                    <div class="best-seller-grid">
+                        <article class="product-card best-seller-card">
+                            <span class="badge badge-bestseller">Bestseller</span>
+                            <h3 class="product-name">Everyday Blazer</h3>
+                            <p>Our most-loved blazer for office days and coffee dates.</p>
+                            <p class="product-price">$99</p>
+                            <button 
+                            class="wishlist-btn btn btn-secondary"
+                            type="button"
+                            >
+                            ♡Add to wishlist
+                        </button>
+                        </article>
+
+                        <article class="product-card best-seller-card">
+                            <span class="badge badge-bestseller">Bestseller</span>
+                            <h3 class="product-name">Second-Skin Bodysuit</h3>
+                            <p>Ultra-soft, smoothing base layer that never rides up.</p>
+                            <p class="product-price">$49</p>
+                            <button 
+                            class="btn btn-secondary wishlist-btn"
+                            type="button"
+                            >
+                            ♡Add to wishlist
+                            </button>
+                        </article>
+
+                        <article class="product-card best-seller-card">
+                            <span class="badge badge-bestseller">Bestseller</span>
+                            <h3 class="product-name">Weekend Wide Leg Jeans</h3>
+                            <p>Relaxed fit denim with just enough stretch to move.</p>
+                            <p class="product-price">$89</p>
+                            <button 
+                            class="btn btn-secondary wishlist-btn"
+                            type="button"
+                            >
+                            ♡Add to wishlist
+                            </button>
+                        </article>
+                    </div>
+
+                    <div class="quick-stats">
+                        <h3>Why shoppers love us</h3>
+                        <ul>
+                            <li><strong>2,500+</strong> five-star reviews</li>
+                            <li><strong>Free returns</strong> within 30 days</li>
+                            <li><strong>Fast shipping</strong> on all US orders</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!--STYLE QUIZ-->
+            <section id="style-quiz" class="section style-quiz">
+                <div class="section-header">
+                    <h2>Find Your Style Vibe</h2>
+                    <p>Answer one quick question to see your starting point.</p>
+                </div>
+
+                <div class="style-quiz-card">
+                    <form id="style-quiz-form">
+                        <div class="form-group">
+                            <label for="quiz-name">Your name or nickname</label>
+
+                            <input
+                            id="quiz-name"
+                            name="name"
+                            type="text"
+                            placeholder="e.g., Chy"
+                            />
+                        </div>
+
+                        <fieldset class="form-group">
+                            <legend>Your current style vibe</legend>
+
+                            <label>
+                                <input type="radio" name="vibe" value="Minimal"/>
+                                Minimal - clean lines, quiet colors
+                            </label>
+
+                            <label>
+                                <input type="radio" name="vibe" value="Romantic"/>
+                                <em>Romantic</em> - soft fabrics, ruffles, florals
+                            </label>
+
+                            <label>
+                                <input type="radio" name="vibe" value="Edgy"/>
+                                <strong>Edgy</strong> - leather, bold cuts, contrast
+                            </label>
+
+                            <label>
+                                <input type="radio" name="vibe" value="Streetwear"/>
+                                Streetwear - oversized, sporty, graphic details
+                            </label>
+                        </fieldset>
+
+                        <button class="btn btn-primary" type="submit">
+                            Get my style suggestion
+                        </button>
+                    </form>
+
+                    <div id="quiz-result" class="quiz-result">
+                        <!--JavaScript will inject a personalized message here-->
+
+                    </div>
+                </div>
+            </section>
+
+            <!--ABOUT + TESTIMONIALS-->
+            <section id="about" class="section about">
+                <div class="about-layout">
+                    <div class="about-copy">
+                        <h2>About Luxe Line Boutique</h2>
+                        <p>
+                            Luxe Line was created for women who love looking put-together but don't have 
+                            hours to plan outfits. Each piece is chosen to mix and match into real, wearable looks.
+                        </p>
+                        <p>
+                            We believe in inclusive sizing, fabrics that feel good, and outfits that work from your 9-5
+                            straight into your 5-9.
+                        </p>
+                        <p>
+                            Every drop is curated like a mini capsule: tops, bottoms, and 
+                            dresses that actually talk to each other in your closet.
+                        </p>
+                    </div>
+
+                    <div class="testimonials">
+                        <h3>What customers are saying</h3>
+
+                        <article class="testimonial-card">
+                            <p class="testimonial-quote">
+                                "I can get dressed for work in five minutes now. Everything matches!"
+                            </p>
+                            <p class="testimonal-name">-- Jordan S.</p>
+                            <p class="testimonial-rating">Rated 5/5 for fit</p>
+                        </article>
+
+                        <article class="testimonial-card">
+                            <p class="testimonial-quote">
+                                "The blazer dress is my go-to for presentations. I feel so confident in it."
+                            </p>
+                            <p class="testimonal-name">-- Maya L.</p>
+                            <p class="testimonial-rating">Rated 5/5 for quality</p>
+                        </article>
+
+                        <article class="testimonial-card">
+                            <p class="testimonial-quote">
+                                "Finally a boutique where the pieces work together. My suitcase has never been lighter."
+                            </p>
+                            <p class="testimonal-name">Alexis R.</p>
+                            <p class="testimonial-rating"> Rated 4.9/5 overall</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!--CONTACT + NEWSLETTER-->
+            <section id="contact" class="section contact">
+                <div class="contact-layout">
+                    <div class="contact-info">
+                        <h2>Contact & Support</h2>
+                        <p>
+                            Have questions about sizing, fit, or styling? Reach out 
+                            -- we'd love to help you build your next outfit lineup.
+                        </p>
+                        <ul>
+                            <li>Email: support@luxelineboutique.com</li>
+                            <li>Based in: Cincinnati, OH</li>
+                            <li>Instagram: @luxelineboutique</li>
+                        </ul>
+                    </div>
+
+                    <div class="newsletter">
+                        <h3>Get on the list</h3>
+                        <p>New drops, styling tips, and early access -- no spam.</p>
+                        <form id="newsletter-form">
+                            <label for="newsletter-email" class="sr-only">Email address</label>
+                            <input
+                            id="newsletter-email"
+                            name="email"
+                            type="email"
+                            placeholder="you@example.com"
+                            />
+                            <button class="btn btn-primary" type="submit">
+                                Join the list
+                            </button>
+                        </form>
+                        <p id="newsletter-message"
+                        class="newsletter-message">
+                            <!--JavaScript will show success or error messages here-->
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--WISHLIST MODAL-->
+            <div id = "wishlist-modal" class="wishlist-modal hidden">
+                <div class="wishlist-content">
+                    <button class="wishlist-close" type="button" aria-label="Close wishlist">
+                        &times;
+                    </button>
+                    <h2 class="wishlist-title">Your Wishlist</h2>
+                    <p class="wishlist-empty">You haven't added anything yet.</p>
+                    <ul id="wishlist-items" class="wishlist-items">
+                    <!--JS will inject items here-->
+                    </ul>
+                </div>
+            </div>
+
+        <!--FOOTER-->
+        <footer class="site-footer">
+            <p class="footer-brand">Luxe Line Boutique</p>
+            <p class="footer-copy">
+                &copy;<span id="current-year"></span>Luxe Line Boutique. All rights reserved.
+            </p>
+            <p class="footer-credit">
+                Designed by <span class="designer-name">Chyenne Battle - Front-End Developer</span>
+            </p>
+        </footer>
+
+        <!--JavaScript-->
+        <script src="fashion-boutique.js"></script>
+    </body>
+</html>
